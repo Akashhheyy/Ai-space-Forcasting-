@@ -13,8 +13,14 @@ export function ResponsiveChart({
   minHeight = 280,
 }: ResponsiveChartProps) {
   return (
-    <div className={cn("chart-container w-full", className)} style={{ minHeight }}>
-      <ResponsiveContainer width="100%" height="100%" debounce={50}>
+    <div
+      className={cn("w-full", className)}
+      style={{
+        width: "100%",
+        height: `${minHeight}px`,
+      }}
+    >
+      <ResponsiveContainer width="100%" height="100%">
         {children}
       </ResponsiveContainer>
     </div>

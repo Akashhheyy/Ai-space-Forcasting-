@@ -88,6 +88,9 @@ export default function DashboardPage() {
     predicted: f.predicted_radiation,
   }));
 
+  console.log("History:", history);
+ console.log("ChartData:", chartData);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 8 }}
