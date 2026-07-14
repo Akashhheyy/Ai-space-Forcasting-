@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     host: str = "0.0.0.0"
     port: int = 8000
 
-    database_url: str = "postgresql://postgres:postgres@localhost:5432/space_radiation"
+    database_url: str = "sqlite:///./data/space_weather.db"
 
     data_fetch_interval_minutes: int = 5
     prediction_interval_minutes: int = 5
